@@ -23,3 +23,4 @@ public class FractionOfPosNegAndZero {
 	        System.out.println(zeroCount/n);
 	}
 }
+
