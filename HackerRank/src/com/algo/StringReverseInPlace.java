@@ -11,7 +11,7 @@ public class StringReverseInPlace {
 			char temp = c[c.length-i-1];
 			c[c.length-i-1]=c[i];
 			c[i] = temp;
-		} 
+		}
 		for (char d : c) {
 			System.out.print(d);
 		}
