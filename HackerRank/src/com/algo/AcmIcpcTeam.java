@@ -29,5 +29,6 @@ public class AcmIcpcTeam {
 			bitwiseOrCount	=bitwiseOrCount+(Character.getNumericValue(s1.charAt(i)) | Character.getNumericValue(s2.charAt(i)));
 			}
 			return bitwiseOrCount;
+			
 	}
 }
