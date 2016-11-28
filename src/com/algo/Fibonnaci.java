@@ -3,17 +3,33 @@ package com.algo;
 public class Fibonnaci {
 
 	public static void main(String[] args) {
-		int i = Integer.valueOf(args[0]);
-		System.out.println(fib(i));
+		int i = 10;
+
+		for (int j = 0; j <i; j++) {
+			System.out.println(fibRecur(j) +"    "+ fibIter(j));
+		}
+//		System.out.println(fibRecur(i));
 	}
 
-	private static int fib(int i) {
-		if (i <= 0) {
-			return 0;
-		} else if (i == 1) {
+	private static int fibRecur(int i) {
+		if (i < 2) {
 			return 1;
-		} else {
-			return (fib(i - 1) + fib(i - 2));
 		}
+			return (fibRecur(i - 1) + fibRecur(i - 2));
 	}
+
+    private static int fibIter(int i){
+        if(i <2){
+            return 1;
+        }
+        int prev =1;
+        int current =1;
+        int counter =2;
+        while(counter++ <= i ){
+            int temp = current;
+            current = current+prev;
+            prev = temp;
+        }
+        return current;
+    }
 }
