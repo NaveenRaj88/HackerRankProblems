@@ -8,6 +8,9 @@ public class Calculator {
         System.out.println(divisorSum(12));
     }
 
+    public static <T> void printArray(){
+
+    }
     public static int divisorSum(int n) {
         int sum = 0;
         for (int i = 1; i <= n / 2; i++) {

@@ -20,7 +20,7 @@ public class PrintCalendar {
 		
 		System.out.println("Mon Tue Wed Thu Fri Sat Sun");
 		for (int i = 0; i < value; i++) {
-			System.out.print("   ");
+			System.out.print("  ");
 		}
 		
 		while(date.getMonthValue()==month){
