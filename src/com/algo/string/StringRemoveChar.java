@@ -1,4 +1,4 @@
-package com.algo;
+package com.algo.string;
 
 /**
  * Created by Naveen Kumar .A on 11/28/16.
